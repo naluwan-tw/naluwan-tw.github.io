@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../node_modules/element-ui/lib/theme-chalk/index.css">
+		<style>
+			.row {
+				padding:10px;
+			}
+			#link {
+				font-size: 20px;
+			}
+			.anvbar {
+				position: sticky ;
+				top: 0px;
+				left: 0px;
+				width: 110%;
+				margin-left: -10%;
+				margin-top: -10%;
+				margin-right: -10%;
+				z-index: 1;
+			}
+		</style>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+	</head>
+	<body style="background-color: rgb(240, 240, 240);">
+		
+		<div id="app">
+			<div id="result">
+
+			</div>
+		</div>
+	</body>
+	<script src="../vuejs/vue.js"></script>
+	<script src="../node_modules/element-ui/lib/index.js"></script>
+	<script>
+		new Vue().$mount('#app')
+	</script>
+	<script>
+		$('#result').load('../html/object/anvbar.html');
+	</script>
+</html>
